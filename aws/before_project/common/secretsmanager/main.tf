@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket  = "tatsukoni-tfstates"
-    key     = "aws/before_project/sns.tfstate"
+    key     = "aws/before_project/common/secretsmanager.tfstate"
     region  = "ap-northeast-1"
     profile = "tatsukoni"
   }
@@ -18,7 +18,7 @@ provider "aws" {
   profile = "tatsukoni"
   default_tags {
     tags = {
-      RepositoryFilePath = "aws/before_project/sns"
+      RepositoryFilePath = "aws/before_project/common/secretsmanager"
     }
   }
 }

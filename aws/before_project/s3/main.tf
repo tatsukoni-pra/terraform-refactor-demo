@@ -18,7 +18,7 @@ provider "aws" {
   profile = "tatsukoni"
   default_tags {
     tags = {
-      RepositoryFilePath = "aws/before_project/s3/main.tf"
+      RepositoryFilePath = "aws/before_project/s3"
     }
   }
 }
